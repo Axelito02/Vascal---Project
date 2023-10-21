@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Estilos/Estilos.css">
     <title>ByVascal</title>
+    <link rel="shortcut icon" href="./Imagenes/Logo-blanco.png" type="image/x-icon">
 </head>
 
-    
 <body>
 
-    <!--Navegador de paginas-->
-
+    <!-- Barra de Navegació-->
     <nav class="navbar">
         <div class="nav-column">
             <a href="./inicio.html"><B>Inicio</B></a>
@@ -23,28 +22,28 @@
                 <img class="Logo" src="./Imagenes/Logov2.png" alt="Logo ByVascal">
             </a>
         </div>
-        <div class="nav-column">
+        <div class="nav-column barraBusqueda">
+            <img src="./Imagenes/Icono - busqueda.png" alt="icono de busqueda">
             <input type="text" placeholder="Buscar...">
         </div>
-        
+
     </nav>
 
     <!-- Carrusel de imagenes-->
-
     <div class="carousel">
 
         <div class="carousel-content">
-          
+
             <div class="carousel-item" id="itemCarousel-1">
-            
+
             </div>
 
             <div class="carousel-item" id="itemCarousel-2">
-              
+
             </div>
 
             <div class="carousel-item" id="itemCarousel-3">
-             
+
             </div>
         </div>
         <div class="carousel-controller">
@@ -53,7 +52,41 @@
             <a href="#itemCarousel-3">•</a>
         </div>
     </div>
-     <!-- pie de la pagina-->
+
+    <!-- Contenido principal -->
+    <main>
+
+        <div class="tituloPagina">
+            <h1>Nuestros Servicios Destacados</h1>
+            <p>Descubre nuestra selección de servicios destacados y explora los servicios que tenemos para
+                ofrecerte. ¡Encuentra la solución perfecta para tus necesidades específicas!</p>
+        </div>
+
+        <div class="cards">
+            <div class="cardServicios">
+                <h3 class="titulo">Alquiler de oficina</h3>
+            </div>
+            <div class="cardServicios">
+                <h3 class="titulo">Beneficios para Empleados</h3>
+            </div>
+            <div class="cardServicios">
+                <h3 class="titulo">Suministros de Oficina</h3>
+            </div>
+        </div>
+        <div class="btnServicios">
+            <a href="./Paginas/servicios.html">
+                <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Ver más</span>
+                </button>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Pie de la pagina-->
     <footer>
         <div class="social">
             <a href="https://instagram.com/by_vaskal?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr" target="_blank">
@@ -63,7 +96,8 @@
                 <img src="https://cdn-icons-png.flaticon.com/512/1384/1384023.png" alt="WhatsApp">
             </a>
             <a href="mailto:correo@example.com">
-                <img src="https://icons.veryicon.com/png/o/brands/popular-brand-icon-simple-icons/gmail-39.png" alt="Correo">
+                <img src="https://icons.veryicon.com/png/o/brands/popular-brand-icon-simple-icons/gmail-39.png"
+                    alt="Correo">
             </a>
 
 
@@ -71,8 +105,6 @@
 
         </div>
     </footer>
- 
-
 
 </body>
 
