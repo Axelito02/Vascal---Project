@@ -236,11 +236,15 @@ button:hover .button-text {
 
 /* css del footer */
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: #F7CAC9;
     color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: auto;
+    gap: 16px;
+
 }
 
 .social a {
