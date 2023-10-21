@@ -3,11 +3,30 @@
     margin: 0;
 }
 
+/* Definir un estilo para el cuerpo de la página */
 body {
+    font-family: Arial, sans-serif; /* Cambia "Arial" a la fuente que desees utilizar */
+    font-size: 16px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+  }
+  
+  /* Estilo para los encabezados h1 */
+  h1 {
+    font-family: "Poppins", sans-serif; /* Cambia "Helvetica Neue" a la fuente que desees utilizar */
+    font-size: 36px;
+    
+  }
+  
+  /* Estilo para los párrafos */
+  p {
+    font-family: "Poppins", sans-serif; /* Cambia a la fuente que desees utilizar */
+    font-size: 18px;
+    color: #666;
+  }
+  
 
 /* css de los elementos de la barra de navegación */
 .navbar {
@@ -18,12 +37,16 @@ body {
     padding: 10px;
     flex-wrap: wrap;
     gap: 20px;
+    
 }
 
 .nav-column {
     text-align: center;
     flex-grow: 1;
+    
 }
+
+
 
 input {
     width: 90%;
@@ -36,13 +59,13 @@ input {
 }
 
 a {
-    color: #8b8b8b;
+    color: #1b1a1a;
     text-decoration: none;
     margin: 0 12px;
 }
 
 a:hover {
-    color: #d48686;
+    color: #ffffff;
     transition: all, 0.5s;
 
 }
@@ -239,7 +262,6 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #F7CAC9;
-    color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: auto;
