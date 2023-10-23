@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    text-align: center;
   }
   
   /* Estilo para los encabezados h1 */
@@ -28,6 +29,15 @@ body {
   }
   
 
+#quienes-somos {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+}
 /* css de los elementos de la barra de navegación */
 .navbar {
     display: flex;
@@ -318,6 +328,8 @@ footer {
     border-color: #7d7d7d;
     padding: 32px;
     margin: 8px;
+
+    
 }
 
 .cardServicios h3 {
