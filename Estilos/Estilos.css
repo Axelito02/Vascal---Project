@@ -11,7 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    text-align: center;
   }
   
   /* Estilo para los encabezados h1 */
@@ -29,15 +28,6 @@ body {
   }
   
 
-#quienes-somos {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-h2 {
-    font-size: 24px;
-}
 /* css de los elementos de la barra de navegación */
 .navbar {
     display: flex;
@@ -47,16 +37,12 @@ h2 {
     padding: 10px;
     flex-wrap: wrap;
     gap: 20px;
-    
 }
 
 .nav-column {
     text-align: center;
     flex-grow: 1;
-    
 }
-
-
 
 input {
     width: 90%;
@@ -72,6 +58,7 @@ a {
     color: #1b1a1a;
     text-decoration: none;
     margin: 0 12px;
+    font-size: 1.4rem;
 }
 
 a:hover {
@@ -307,61 +294,131 @@ footer {
     color: #4b4b4b;
     display: flex;
     flex-direction: column;
-    margin: 32px 40px;
+    margin: 40px;
     gap: 12px;
 }
 
-/* css de las cartas de los servicios */
-.cards {
+.tituloPagina p {
+    font-size: 1.5rem;
+}
+
+.tituloPagina h1{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 32px 0;
     justify-content: center;
+    margin: 20px 0;
 }
 
-.cardServicios {
-    row-gap: 8px;
-    background-color: #ffffff;
-    border: solid 2px;
-    border-color: #7d7d7d;
-    padding: 32px;
-    margin: 8px;
-
-    
+.tituloPagina p{
+    display: flex;
+    justify-content: center;
+    padding: 18px;
 }
 
-.cardServicios h3 {
-    font-weight: bold;
+.tituloPagina hr{
+    height: 2px;
+    background-color: #DFC583;
 }
 
-.cards .cardServicios {
+.seccion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.seccion2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.seccion h1{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.seccion2 h1{
+    display: flex;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.seccion p{
+    margin: 0 14%;
+    font-size: 1.5rem;
+}
+
+.seccion2 p{
+    margin: 0 14%;
+    font-size: 1.5rem;
+}
+
+/* css de las cartas de los servicios */
+.containerCards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    margin: 50px;
+    gap: 20px;
+}
+.card {
+    position: relative;
+    width: 70%;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card img{
+    width: 100%;
+  }
+  
+  .card__content {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    border-radius: 10px;
-    color: #d48686;
-    cursor: pointer;
-    transition: 400ms;
-}
-
-.cards .cardServicios:hover {
-    transform: scale(1.1, 1.1);
-    /* border: solid 1px; */
-}
-
-.cards .cardServicios img {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-}
-
-/* 
-.cards:hover>.cardServicios:not(:hover) {
-    filter: blur(10px);
-    transform: scale(0.9, 0.9);
-} */
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #2d2d2d;
+    opacity: 0.8;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.4;
+  }
+  
