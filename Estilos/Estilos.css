@@ -5,28 +5,33 @@
 
 /* Definir un estilo para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif; /* Cambia "Arial" a la fuente que desees utilizar */
-    font-size: 16px; /* Tamaño de la fuente */
-    color: #333; /* Color del texto */
+    font-family: Arial, sans-serif;
+    /* Cambia "Arial" a la fuente que desees utilizar */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    color: #333;
+    /* Color del texto */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-  
-  /* Estilo para los encabezados h1 */
-  h1 {
-    font-family: "Poppins", sans-serif; /* Cambia "Helvetica Neue" a la fuente que desees utilizar */
+}
+
+/* Estilo para los encabezados h1 */
+h1 {
+    font-family: "Poppins", sans-serif;
+    /* Cambia "Helvetica Neue" a la fuente que desees utilizar */
     font-size: 36px;
-    
-  }
-  
-  /* Estilo para los párrafos */
-  p {
-    font-family: "Poppins", sans-serif; /* Cambia a la fuente que desees utilizar */
+
+}
+
+/* Estilo para los párrafos */
+p {
+    font-family: "Poppins", sans-serif;
+    /* Cambia a la fuente que desees utilizar */
     font-size: 18px;
     color: #666;
-  }
-  
+}
+
 
 /* css de los elementos de la barra de navegación */
 .navbar {
@@ -58,7 +63,7 @@ a {
     color: #1b1a1a;
     text-decoration: none;
     margin: 0 12px;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 a:hover {
@@ -163,7 +168,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 32px;
 }
 
 button {
@@ -270,17 +275,16 @@ footer {
     margin: 0 10px;
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
 }
 
 .social a img {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     transition: transform 0.2s;
 }
 
 .social a img:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
     transition: all, 0.5s;
 }
 
@@ -302,93 +306,93 @@ footer {
     font-size: 1.5rem;
 }
 
-.tituloPagina h1{
+.tituloPagina h1 {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.tituloPagina p{
+.tituloPagina p {
     display: flex;
     justify-content: center;
     padding: 18px;
 }
 
-.tituloPagina hr{
+.tituloPagina hr {
     height: 2px;
     background-color: #DFC583;
 }
 
-.seccion{
+.seccion {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
 }
 
-.seccion2{
+.seccion2 {
     display: flex;
     flex-direction: column;
     margin-top: 32px;
 }
 
-.seccion h1{
+.seccion h1 {
     margin: 0;
     font-size: 2rem;
 }
 
-.seccion2 h1{
+.seccion2 h1 {
     display: flex;
     margin: 0;
     font-size: 1.5rem;
 }
 
-.seccion p{
+.seccion p {
     margin: 0 14%;
     font-size: 1.5rem;
 }
 
-.seccion2 p{
+.seccion2 p {
     margin: 0 14%;
     font-size: 1.5rem;
 }
 
 /* css de las cartas de los servicios */
-.containerCards{
+.containerCards {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto auto;
     justify-content: center;
     justify-items: center;
     margin: 50px;
-    gap: 20px;
+    gap: 32px;
 }
+
 .card {
     position: relative;
-    width: 70%;
+    width: auto;
     height: auto;
-    background-color: #f2f2f2;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
-  .card img{
+}
+
+.card img {
     width: 100%;
-  }
-  
-  .card__content {
+    border-radius: 12px;
+}
+
+.card__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -396,29 +400,38 @@ footer {
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    justify-content: center;
-    background-color: #2d2d2d;
+    background-color: #232323;
     opacity: 0.8;
     transform: rotateX(-90deg);
     transform-origin: bottom;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover .card__content {
+}
+
+.card:hover .card__content {
     transform: rotateX(0deg);
-  }
-  
-  .card__title {
-    margin: 0;
-    font-size: 24px;
+}
+
+.card__title {
+    margin: 0 24px;
+    font-size: 2.5rem;
     color: #ffffff;
     font-weight: 700;
-  }
-  
-  .card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
+}
+
+.card__description {
+    margin: 10px 24px 0;
+    font-size: 16px;
     color: #ffffff;
     line-height: 1.4;
-  }
-  
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    box-sizing: border-box;
+    width: 100%;
+}
