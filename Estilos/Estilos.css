@@ -1,12 +1,11 @@
 * {
-    font-family: Arial, sans-serif;
+    font-family: "Scope One";
     margin: 0;
 }
 
 /* Definir un estilo para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    /* Cambia "Arial" a la fuente que desees utilizar */
+  
     font-size: 16px;
     /* Tamaño de la fuente */
     color: #333;
@@ -16,17 +15,10 @@ body {
     min-height: 100vh;
 }
 
-/* Estilo para los encabezados h1 */
-h1 {
-    font-family: "Poppins", sans-serif;
-    /* Cambia "Helvetica Neue" a la fuente que desees utilizar */
-    font-size: 36px;
-
-}
 
 /* Estilo para los párrafos */
 p {
-    font-family: "Poppins", sans-serif;
+    font-family: "Scope One";
     /* Cambia a la fuente que desees utilizar */
     font-size: 18px;
     color: #666;
@@ -268,6 +260,8 @@ footer {
     padding: 20px;
     margin-top: auto;
     gap: 16px;
+ 
+   
 
 }
 
@@ -310,6 +304,7 @@ footer {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    font-family: "Urbanist regular" ;
 }
 
 .tituloPagina p {
